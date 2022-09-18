@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Online IDE</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <center>
+      <h1 class="head1">Online IDE</h1>
+      <form id="myform" name="myform" method="post" action="compilecode">
+        <!-- <h3>Code</h3> -->
+        <textarea
+          rows="40"
+          cols="80"
+          id="code"
+          name="code"
+          placeholder="Write Code here..."
+        ></textarea>
+        <br />
+        <!-- <h3>Input</h3> -->
+        <textarea
+          rows="10"
+          cols="80"
+          id="input"
+          name="input"
+          placeholder="Write Inputs here..."
+        ></textarea>
+        <br />
+        <!-- Language : -->
+        <select name="lang">
+          <option value="C">C++</option>
+          <option value="Java">Java</option>
+          <option value="Python">Python</option>
+        </select>
+        <br />
+        <p>Is there any input?</p>
+        <br />
+        <input type="radio" name="inputRadio" id="inputRadio" value="true" />yes
+        <input type="radio" name="inputRadio" id="inputRadio" value="false" />No
+        <br />
+        <input type="submit" value="submit" name="submit" id="button" />
+      </form>
+    </center>
+  </body>
+</html>
